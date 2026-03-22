@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quantix — Intelligence, Engineered for Humanity.">
+    <title>Quantix — The Intelligence Layer</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-ring">
+                <div class="preloader-planet"></div>
+            </div>
+            <img src="assets/logo.png" alt="Quantix" class="preloader-logo-img">
+            <h1 class="font-syne preloader-word gradient-text">Quantix</h1>
+            <div class="preloader-bar"><div class="fill"></div></div>
+        </div>
+    </div>
+
+    <canvas id="bg-canvas"></canvas>
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-brand font-syne"><img src="assets/logo.png" alt="Quantix" class="nav-logo">Quantix</div>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        <ul class="nav-links">
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#responsible">Mission</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cta magnetic" onclick="document.getElementById('waitlist').scrollIntoView({behavior:'smooth'})">Get Early Access</button>
+    </nav>
+    <div class="mobile-nav" id="mobileNav">
+        <ul><li><a href="#hero">Home</a></li><li><a href="#products">Products</a></li><li><a href="#responsible">Mission</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+
+    <!-- ═══════ HERO (FULL VIEWPORT) ═══════ -->
+    <section id="hero">
+        <div class="hero-inner reveal">
+            <div class="hero-pill glass font-mono"><span class="dot-live"></span> Responsible Engineering &middot; Human-First &middot; Built for Everyone</div>
+            <h1 class="hero-h1 font-syne">The Intelligence Layer,<br><span class="gradient-text">Built for Humanity.</span></h1>
+            <p class="hero-p">Quantix sets the standard for responsible, efficient, and sustainable AI — engineering systems across education, healthcare, sports, and research that keep humans in control.</p>
+            <div class="hero-btns">
+                <button class="btn-glow magnetic" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Explore Our Products</button>
+                <button class="btn-outline magnetic" onclick="document.getElementById('responsible').scrollIntoView({behavior:'smooth'})">Our Mission</button>
+            </div>
+        </div>
+        <div class="scroll-cue"><span class="font-mono">Scroll</span><div class="scroll-line-anim"></div></div>
+    </section>
+
+    <!-- ═══════ ABOUT (FULL VIEWPORT) ═══════ -->
+    <section id="about" class="sec sec-full">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="tag font-mono">WHO WE ARE</span>
+                <h2 class="sec-title font-syne">Technology That Works With You.<br>Not Instead of You.</h2>
+            </div>
+            <div class="about-layout reveal">
+                <div class="about-left glass card-pad">
+                    <p>Quantix is built on a single conviction: that technology should make people more capable, not replace them. Our engineering norms ensure every system we ship is efficient, sustainable, and human-centered.</p>
+                    <div class="more-text" style="display:none;">
+                        <p>We work across education, healthcare, sports, and research — not because these are the easiest markets, but because these are the places where access to intelligent support has always been unevenly distributed. Every product starts with a real gap. Quantix closes those gaps — carefully, ethically, and with the human always in control.</p>
+                    </div>
+                    <button class="learn-more-btn" onclick="toggleMore(this)">Read more ↓</button>
+                </div>
+                <div class="stats-row">
+                    <div class="stat glass card-pad"><span class="stat-val font-syne gradient-text" data-target="4">0</span><span class="stat-lbl font-mono">Intelligent Systems</span></div>
+                    <div class="stat glass card-pad"><span class="stat-val font-syne gradient-text" data-target="3">0</span><span class="stat-lbl font-mono">Industries Transformed</span></div>
+                    <div class="stat glass card-pad"><span class="stat-val font-syne gradient-text" data-target="1">0</span><span class="stat-lbl font-mono">Core Norm: Human Oversight</span></div>
+                    <div class="stat glass card-pad"><span class="stat-val font-syne gradient-text" data-target="0">0</span><span class="stat-lbl font-mono">Water Footprint Target</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ ECOSYSTEM — PLANETARY SYSTEM (FULL VIEWPORT) ═══════ -->
+    <section id="ecosystem" class="sec sec-full">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="tag font-mono">THE QUANTIX ECOSYSTEM</span>
+                <h2 class="sec-title font-syne">Four Products. One Engineering Standard.</h2>
+                <p class="sec-sub">Every Quantix product is governed by the same engineering norms — connected through HANU, our core intelligence layer currently in development.</p>
+            </div>
+        </div>
+
+        <div class="solar-system reveal">
+            <!-- Orbit rings -->
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <!-- Central sun (HANU) -->
+            <div class="sun">
+                <div class="sun-core"></div>
+                <div class="sun-glow"></div>
+                <span class="sun-label font-syne">HANU</span>
+                <span class="sun-sub font-mono">In Development</span>
+            </div>
+
+            <!-- Planet: AUREM (orbit 1) -->
+            <div class="planet-orbit po-1">
+                <div class="planet planet-gold">
+                    <div class="planet-tooltip glass">
+                        <strong class="font-syne text-gold">AUREM</strong>
+                        <span class="font-mono">Education</span>
+                        <p>Curriculum reasoning & hallucination prevention</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planet: AURORA (orbit 2) -->
+            <div class="planet-orbit po-2">
+                <div class="planet planet-green">
+                    <div class="planet-tooltip glass">
+                        <strong class="font-syne text-green">AURORA</strong>
+                        <span class="font-mono">Healthcare</span>
+                        <p>Clinical synthesis & safety validation</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Planet: IRIS (orbit 3) -->
+            <div class="planet-orbit po-3">
+                <div class="planet planet-purple">
+                    <div class="planet-tooltip glass">
+                        <strong class="font-syne text-purple">IRIS</strong>
+                        <span class="font-mono">Sports</span>
+                        <p>Biomechanical analysis & performance support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ PRODUCTS (FULL VIEWPORT) ═══════ -->
+    <section id="products" class="sec">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="tag font-mono">WHAT WE BUILD</span>
+                <h2 class="sec-title font-syne">Real Problems. Real People.<br>Quantix Standards.</h2>
+                <p class="sec-sub">Four systems built under Quantix's engineering norms — each solving a specific, urgent problem with efficiency and accountability.</p>
+            </div>
+            <div class="prod-grid">
+                <!-- AUREM -->
+                <div class="prod-card glass reveal">
+                    <div class="card-orb orb-gold"></div>
+                    <h3 class="font-syne card-name text-gold">AUREM</h3>
+                    <span class="font-mono card-tag">Education · Grades 9–12</span>
+                    <p class="card-tagline italic text-gold">"Learn more. Depend less."</p>
+                    <p class="card-brief">Built under Quantix's curriculum-integrity norms — a hallucination-resistant academic platform that checks understanding before giving answers.</p>
+                    <div class="card-expand" style="display:none;">
+                        <p>Integrates intelligent academic chat, adaptive assessments, college discovery, document study tools, audio learning, and the School-AUREM Network.</p>
+                        <div class="callout-box border-gold">Quantix norm: conceptual-gated assistance — checks whether you understand the concept before it helps.</div>
+                    </div>
+                    <button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button>
+                    <a href="https://aurem-xi.vercel.app" target="_blank" rel="noopener" class="card-link font-mono">View Live →</a>
+                    <div class="pill-row"><span class="pill">Hallucination-Resistant</span><span class="pill">Adaptive</span><span class="pill">Audio Learning</span><span class="pill">School Network</span></div>
+                </div>
+                <!-- AURORA -->
+                <div class="prod-card glass reveal reveal-delay-1">
+                    <div class="card-orb orb-green"></div>
+                    <h3 class="font-syne card-name text-green">AURORA</h3>
+                    <span class="font-mono card-tag">Healthcare · Clinical AI</span>
+                    <p class="card-tagline italic text-green">"Understand more. Worry less."</p>
+                    <p class="card-brief">Engineered under Quantix's clinical-safety norms — helps patients understand symptoms and interpret reports, while the doctor stays in charge.</p>
+                    <div class="card-expand" style="display:none;">
+                        <p>Analyzes lab results, MRI, CT, EKG, pathology, and genetics. Detects red-flag patterns early, triggers emergency escalation, and provides structured mental health first aid.</p>
+                        <div class="callout-box border-green">Quantix norm: no direct diagnosis. Every output is probabilistic, every recommendation advisory. The qualified clinician decides — always.</div>
+                    </div>
+                    <button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button>
+                    <a href="https://aurora-ai-henna.vercel.app/" target="_blank" rel="noopener" class="card-link font-mono">View Live →</a>
+                    <div class="pill-row"><span class="pill">Probabilistic Triage</span><span class="pill">Report Analysis</span><span class="pill">Emergency Escalation</span><span class="pill">HIPAA / GDPR</span></div>
+                </div>
+                <!-- IRIS -->
+                <div class="prod-card glass reveal reveal-delay-2">
+                    <div class="card-orb orb-purple"></div>
+                    <h3 class="font-syne card-name text-purple">IRIS</h3>
+                    <span class="font-mono card-tag">Sports · Computer Vision</span>
+                    <p class="card-tagline italic text-purple">"Elite coaching. For everyone."</p>
+                    <p class="card-brief">Governed by Quantix's accessibility standards — analyzes technique, identifies inefficiencies, and flags injury risks from any smartphone. No lab required.</p>
+                    <div class="card-expand" style="display:none;">
+                        <p>Covers training load management, recovery guidance, and nutrition basics. Works for beginners and competitive athletes alike.</p>
+                        <div class="callout-box border-purple">Quantix norm: surface only the highest-impact insights — then help you act on them. The coach's judgment always comes first.</div>
+                    </div>
+                    <button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button>
+                    <div class="pill-row"><span class="pill">Computer Vision</span><span class="pill">Injury Risk</span><span class="pill">Trend Prediction</span><span class="pill">Any Smartphone</span></div>
+                </div>
+                <!-- HANU -->
+                <div class="prod-card glass reveal reveal-delay-3">
+                    <div class="card-orb orb-cyan"></div>
+                    <h3 class="font-syne card-name text-cyan">HANU</h3>
+                    <span class="font-mono card-tag">Research · Validation · In Development</span>
+                    <p class="card-tagline italic text-cyan">"The intelligence behind the intelligence."</p>
+                    <p class="card-brief">Currently in development — HANU will be the shared reasoning and validation layer governed by Quantix's traceability and human-oversight norms.</p>
+                    <div class="card-expand" style="display:none;">
+                        <p>Designed to handle knowledge synthesis, multi-step reasoning, and cross-domain validation — under Quantix's standard that every output must be traceable, confidence-marked, and flagged when uncertain.</p>
+                        <div class="callout-box border-cyan">Quantix engineering pipeline: Knowledge Ingestion → Reasoning → Research → Validation → Human-Supervised Output.</div>
+                    </div>
+                    <button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button>
+                    <div class="pill-row"><span class="pill">RAG + Symbolic</span><span class="pill">Traceability</span><span class="pill">Confidence Scores</span><span class="pill">Human-in-Loop</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ RESPONSIBLE AI ═══════ -->
+    <section id="responsible" class="sec">
+        <div class="container">
+            <div class="sec-head reveal">
+                <span class="tag font-mono">OUR NORMS</span>
+                <h2 class="sec-title font-syne">Quantix Holds Itself<br>to a Higher Standard.</h2>
+            </div>
+            <div class="commit-grid">
+                <div class="commit-card glass card-pad reveal"><span class="commit-icon">💧</span><h4 class="font-syne text-cyan">Negligible Water</h4><p>Quantix mandates closed-loop liquid cooling in its infrastructure. The heat leaves. The water stays.</p><div class="card-expand" style="display:none;"><p>Our engineering norm: sealed dielectric fluid systems where coolant circulates continuously, transfers heat, and returns without evaporative loss. No exceptions.</p></div><button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button></div>
+                <div class="commit-card glass card-pad reveal reveal-delay-1"><span class="commit-icon">⚡</span><h4 class="font-syne text-gold">Nuclear + Renewables</h4><p>Quantix's long-term infrastructure standard requires clean, stable, carbon-free power — both nuclear and renewable, together.</p><div class="card-expand" style="display:none;"><p>Renewables are essential but carry intermittency. Nuclear is carbon-free and energy-dense. Our company norm is to build around both — because responsible engineering needs power that is clean, stable, and available at scale.</p></div><button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button></div>
+                <div class="commit-card glass card-pad reveal reveal-delay-2"><span class="commit-icon">🧠</span><h4 class="font-syne text-purple">Build Leaner</h4><p>Quantix's efficiency standard: half the compute, same output quality. Quantization, pruning, knowledge distillation — by design, not afterthought.</p><div class="card-expand" style="display:none;"><p>Every system we ship treats computational efficiency as a primary engineering specification. Smaller compute. Lower energy. Lower water. Not less intelligent — more consciously engineered.</p></div><button class="learn-more-btn" onclick="toggleMore(this)">Learn more ↓</button></div>
+            </div>
+            <blockquote class="pullquote glass reveal"><p class="font-syne gradient-text">"Quantix exists to make humans more capable, more creative, and more free — our norms ensure technology never makes people more dependent, more displaced, or more diminished."</p></blockquote>
+            <div class="impact-row reveal">
+                <div class="impact-card glass card-pad"><span class="impact-num font-syne gradient-text">700K L</span><span class="impact-lbl">Freshwater per large model</span><span class="impact-target font-mono">→ Our target: near zero</span></div>
+                <div class="impact-card glass card-pad"><span class="impact-num font-syne gradient-text">2×</span><span class="impact-lbl">AI energy demand by 2026</span><span class="impact-target font-mono">→ Nuclear + Renewables</span></div>
+                <div class="impact-card glass card-pad"><span class="impact-num font-syne gradient-text">Billions</span><span class="impact-lbl">People underserved globally</span><span class="impact-target font-mono">→ Our reason for building</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ METHODOLOGY ═══════ -->
+    <section id="methodology" class="sec">
+        <div class="container">
+            <div class="sec-head reveal"><span class="tag font-mono">OUR ENGINEERING PIPELINE</span><h2 class="sec-title font-syne">Every Output Earned. Every Step Traceable.</h2></div>
+            <div class="steps-grid">
+                <div class="step-card glass card-pad reveal"><span class="step-num font-syne text-cyan">01</span><div><h4 class="font-syne">Knowledge Ingestion</h4><p>Quantix standard: curated, verified sources only — peer-reviewed, curriculum-aligned, clinically validated.</p></div></div>
+                <div class="step-card glass card-pad reveal reveal-delay-1"><span class="step-num font-syne text-gold">02</span><div><h4 class="font-syne">Reasoning & Synthesis</h4><p>Quantix norm: structured reasoning within evidence bounds. Low confidence is flagged, never hidden.</p></div></div>
+                <div class="step-card glass card-pad reveal reveal-delay-2"><span class="step-num font-syne">03</span><div><h4 class="font-syne">Validation</h4><p>Quantix standard: logical integrity checks, statistical sanity tests, and claim-scoping filters before anything reaches a user.</p></div></div>
+                <div class="step-card glass card-pad reveal reveal-delay-3"><span class="step-num font-syne text-purple">04</span><div><h4 class="font-syne">Human-Guided Output</h4><p>Quantix's defining norm: the final step is never automated. The clinician verifies. The educator decides. The coach interprets.</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ WAITLIST ═══════ -->
+    <section id="waitlist" class="sec">
+        <div class="container">
+            <div class="cta-block glass card-pad reveal">
+                <h2 class="font-syne sec-title" style="margin-bottom:0.8rem;">Join the Intelligence Network</h2>
+                <p class="sec-sub" style="margin-bottom:2rem;">Get priority access to AUREM and AURORA betas.</p>
+                <form class="cta-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Enter your email" class="cta-input" required><button type="submit" class="btn-glow magnetic">Join Waitlist</button></form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer id="contact" class="sec footer-sec">
+        <div class="container">
+            <div class="footer-top reveal">
+                <div class="footer-info">
+                    <span class="tag font-mono">GET IN TOUCH</span>
+                    <h2 class="font-syne" style="font-size:2rem;margin-bottom:1rem;">Work With Us. Build With Us.</h2>
+                    <p>Schools, hospitals, sports programs, or anyone who believes technology should meet a higher standard — let's talk.</p>
+                    <a href="mailto:praneet.priyansh009@gmail.com" class="email-link font-mono" style="margin-top:1.5rem;display:inline-flex;align-items:center;gap:0.5rem;">✉ praneet.priyansh009@gmail.com</a>
+                </div>
+                <div class="footer-cols">
+                    <div><h5 class="font-syne">Products</h5><ul><li><a href="https://aurem-xi.vercel.app" target="_blank">AUREM</a></li><li><a href="https://aurora-ai-henna.vercel.app/" target="_blank">AURORA</a></li><li>IRIS</li><li>HANU</li></ul></div>
+                    <div><h5 class="font-syne">Company</h5><ul><li><a href="#about">About</a></li><li><a href="#responsible">Mission</a></li><li><a href="#methodology">How It Works</a></li></ul></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="font-syne footer-word">Quantix</span>
+                <p class="font-mono disclaimer">All Quantix products are assistive tools governed by our human-oversight norms. © 2026 Quantix.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="btt magnetic" onclick="window.scrollTo({top:0,behavior:'smooth'})"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"/></svg></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "quantix",
+  "version": "1.0.0",
+  "description": "Quantix — Intelligence, Engineered for Humanity",
+  "scripts": {
+    "start": "npx -y serve .",
+    "dev": "npx -y serve ."
+  },
+  "keywords": ["quantix", "ai", "startup"],
+  "author": "Praneet Priyansh",
+  "license": "MIT"
+}
