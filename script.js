@@ -1,4 +1,4 @@
-// ═══════════ QUANTIX — IMMERSIVE JS ═══════════
+// ═══════════ VAJDHATA — IMMERSIVE JS ═══════════
 
 // PRELOADER
 window.addEventListener('load', () => {
@@ -134,10 +134,10 @@ setInterval(() => { if (Math.random() > 0.3) spawnShootingStar(); }, 2200);
 
 // Nebula glow positions (subtle colored clouds)
 const nebulae = [
-    { x: 0.15, y: 0.25, r: 550, color: 'rgba(0, 245, 212, 0.02)' },
-    { x: 0.85, y: 0.55, r: 600, color: 'rgba(157, 78, 221, 0.018)' },
-    { x: 0.5, y: 0.85, r: 450, color: 'rgba(212, 175, 55, 0.012)' },
-    { x: 0.65, y: 0.15, r: 400, color: 'rgba(0, 245, 212, 0.01)' },
+    { x: 0.15, y: 0.25, r: 550, color: 'rgba(211,167,91, 0.02)' },
+    { x: 0.85, y: 0.55, r: 600, color: 'rgba(255,136,0, 0.018)' },
+    { x: 0.5, y: 0.85, r: 450, color: 'rgba(228,186,115, 0.012)' },
+    { x: 0.65, y: 0.15, r: 400, color: 'rgba(211,167,91, 0.01)' },
 ];
 
 let t = 0;
@@ -146,7 +146,7 @@ function drawStarfield() {
     ctx.clearRect(0, 0, W, H);
 
     // Deep space background
-    ctx.fillStyle = '#040408';
+    ctx.fillStyle = '#000000';
     ctx.fillRect(0, 0, W, H);
 
     // Nebula clouds
