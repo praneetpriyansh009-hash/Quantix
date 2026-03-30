@@ -1,12 +1,14 @@
 const fs = require('fs');
-const files = ['index.html', 'quantix.html', 'style.css', 'script.js', 'package.json'];
+const files = ['index.html', 'vajdhata.html', 'style.css', 'script.js', 'package.json'];
 
 files.forEach(f => {
     if (fs.existsSync(f)) {
         let c = fs.readFileSync(f, 'utf8');
         c = c.replace(/Quantix/g, 'Vajdhata')
              .replace(/quantix/g, 'vajdhata')
-             .replace(/QUANTIX/g, 'VAJDHATA');
+             .replace(/Aurem/g, 'Auremous')
+             .replace(/aurem/g, 'auremous')
+             .replace(/AUREM/g, 'AUREMOUS');
              
         fs.writeFileSync(f, c);
     }
